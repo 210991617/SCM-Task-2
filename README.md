@@ -18,3 +18,14 @@ heap [player1_stack]=heap[player1_stack]-player1_coins
 print (heap)
 print("invalid input")
 continue
+if heap[0] == heap[1] == heap[2] == heap [3] == 0:
+print(player_1, "WON")
+else:
+break
+print(player_2,"'s turn")
+player2_coins = int(input("Enter number of coins"))
+player2_stack = int(input('which stack?'))
+player2_stack = player2_stack - 1
+if player2_stack<=4 and player2_coins > 0 and player2_coins <= heap[player2_stack]:
+heap [player2_stack]=heap[player2_stack] - player2_coins
+print (heap)
