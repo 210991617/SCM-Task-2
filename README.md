@@ -29,3 +29,10 @@ player2_stack = player2_stack - 1
 if player2_stack<=4 and player2_coins > 0 and player2_coins <= heap[player2_stack]:
 heap [player2_stack]=heap[player2_stack] - player2_coins
 print (heap)
+else:
+print("invalid input")
+print(heap)
+continue
+if heap[0] == heap[1] == heap[2] == heap[3] == 0:
+print(player_2,"won")
+break
